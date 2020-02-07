@@ -3,18 +3,16 @@ package aberthier.projet.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import java.util.ArrayList;
+import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+@PrimaryKeyJoinColumn(name = "id")
 @Data
 @NoArgsConstructor
-public class Utilisateur extends  Personne {
+public class Utilisateur extends Personne {
     @Id
     private int id;
     private Date dateAdhesion;
