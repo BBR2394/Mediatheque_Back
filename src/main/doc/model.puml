@@ -1,0 +1,48 @@
+@startuml
+
+Document : id
+Document : titre
+Document : auteur
+Document : date
+
+Livre : type
+Livre : genre
+Livre : acteur
+
+Musique : duree
+Musique : support
+Musique : genre
+Musique : album
+
+Film : format
+Film : genre
+
+Acteur : nom
+Acteur : prenom
+
+Personne : nom
+Personne : prenom
+Personne : age
+Personne : adresse
+
+Utilisateur : actif
+Utilisateur : dateAdhesion
+
+Employee : poste
+Employee : dateEmbauche
+
+Emprunt : dateEmprunt
+Emprunt : dateRetour
+
+Document <|-- Livre
+Document <|-- Musique
+Document <|-- Film
+Acteur -* Film
+
+Personne <|-- Utilisateur
+Personne <|-- Employee
+
+Emprunt *-- Utilisateur
+Emprunt *-- Document
+
+@enduml
