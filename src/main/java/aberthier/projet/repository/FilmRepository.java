@@ -1,0 +1,10 @@
+package aberthier.projet.repository;
+
+
+import aberthier.projet.model.Film;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+@RepositoryRestResource(collectionResourceRel = "film", path = "films")
+public interface FilmRepository extends CrudRepository<Film, Integer> {
+}
