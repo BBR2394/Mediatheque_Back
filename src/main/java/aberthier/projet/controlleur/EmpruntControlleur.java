@@ -23,6 +23,6 @@ public class EmpruntControlleur  {
 
     @GetMapping("/search")
     public List<Emprunt> findByUser(@RequestParam("idDocument") int idDocument, @RequestParam("idUser") int idUser){
-
+        return null;
     }
 }

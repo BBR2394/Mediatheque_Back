@@ -6,13 +6,9 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-@PrimaryKeyJoinColumn(name = "id")
 @Data
 @NoArgsConstructor
 public class Musique extends Document {
-    @Id
-    private int id;
     private int duree;
     private MusiqueSupport support;
     private MusiqueGenre genre;
