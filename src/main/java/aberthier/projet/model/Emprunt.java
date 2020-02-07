@@ -18,5 +18,7 @@ public class Emprunt {
     private Date dateRetour;
     @OneToOne
     private Document document;
+    @OneToOne
+    private Utilisateur utilisateur;
 
 }
