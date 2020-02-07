@@ -14,7 +14,7 @@ public class Musique extends Document {
     @Id
     private int id;
     private int duree;
-    private MusiqueSuport suport;
+    private MusiqueSupport suport;
     private MusiqueGenre musiqueGenre;
     private String album;
 

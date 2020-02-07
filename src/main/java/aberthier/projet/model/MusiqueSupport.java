@@ -1,6 +1,6 @@
 package aberthier.projet.model;
 
-public enum MusiqueSuport {
+public enum MusiqueSupport {
     CD,
     VINYL,
     K7
