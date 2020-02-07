@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class Acteur {
     @Id
-    private int id_acteur;
+    private int id;
     private String nom;
     private String prenom;
 }

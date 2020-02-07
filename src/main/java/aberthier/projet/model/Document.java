@@ -13,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class Document {
     @Id
-    private int id_Document;
+    private int id;
     private String titre;
     private String auteur;
     private Date date;

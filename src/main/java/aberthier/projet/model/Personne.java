@@ -5,14 +5,15 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
-@Entity
+@MappedSuperclass
 @Data
 @NoArgsConstructor
 public class Personne {
     @Id
-    private int id_personne;
+    private int id;
     private String nom;
     private String prenom;
     private int age;
