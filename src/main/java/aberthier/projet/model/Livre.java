@@ -14,8 +14,8 @@ public class Livre extends Document {
     @Id
     private int id;
     private TypeLivre type;
-    private FormatLivre formatLivre;
-    private GenreLivre genreLivre;
+    private FormatLivre format;
+    private GenreLivre genre;
 
 
 }

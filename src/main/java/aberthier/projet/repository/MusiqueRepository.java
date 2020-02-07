@@ -10,7 +10,7 @@ import java.util.Set;
 
 @RepositoryRestResource(collectionResourceRel = "musique", path = "musiques")
 public interface MusiqueRepository extends CrudRepository<Musique, Integer> {
-    Set<Musique> findMusiqueByMusiqueGenre(MusiqueGenre genre);
+    Set<Musique> findMusiqueByGenre(MusiqueGenre genre);
     Set<Musique> findMusiqueByAlbum(String album);
-    Set<Musique> findMusiqueBySuport(MusiqueSupport support);
+    Set<Musique> findMusiqueBySupport(MusiqueSupport support);
 }

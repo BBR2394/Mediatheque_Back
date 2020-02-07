@@ -19,7 +19,7 @@ public class Film extends  Document {
     @OneToMany
     @JoinColumn(name = "id_film")
     private List<Acteur> acteurs;
-    private FilmFormat filmFormat;
-    private FilmGenre filmGenre;
+    private FilmFormat format;
+    private FilmGenre genre;
 
 }

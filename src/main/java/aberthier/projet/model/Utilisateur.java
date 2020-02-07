@@ -19,6 +19,6 @@ public class Utilisateur extends Personne {
     private boolean actif;
     @OneToMany
     @JoinColumn(name = "id_utilisateur")
-    private List<Emprunt> listEmprunts;
+    private List<Emprunt> emprunts;
 
 }
