@@ -5,10 +5,12 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import java.util.Date;
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 @Data
 @NoArgsConstructor
 public class Personne {
@@ -16,7 +18,6 @@ public class Personne {
     private int id;
     private String nom;
     private String prenom;
-    private int age;
     private Date dateNaissance;
     private String adresse;
 }

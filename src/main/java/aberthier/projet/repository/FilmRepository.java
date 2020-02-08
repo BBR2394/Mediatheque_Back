@@ -12,6 +12,7 @@ import java.util.Set;
 public interface FilmRepository extends CrudRepository<Film, Integer> {
     @Query("select f from Film f inner join f.acteurs a where a.nom = :nom")
     Set<Film> findFilmsByActeurNom(String nom);
+
     Set<Film> findFilmsByGenre(String genre);
 
     Set<Film> findFilmsByTitreContaining(String titre);
